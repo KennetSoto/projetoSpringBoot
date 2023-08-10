@@ -10,17 +10,18 @@ public class Produto {
 	
 	@Id
 	@GeneratedValue( strategy = GenerationType.IDENTITY)
-	private long id;
+	private Long id;
+	
 	private String nome;
 	private int quantidade;
 	private double preco;
 	private String descricaoProduto;
-	private String urlImage;
+	private String urlImagem;
 	
-	public long getId() {
+	public Long getId() {
 		return id;
 	}
-	public void setId(long id) {
+	public void setId(Long id) {
 		this.id = id;
 	}
 	public String getNome() {
@@ -47,13 +48,10 @@ public class Produto {
 	public void setDescricaoProduto(String descricaoProduto) {
 		this.descricaoProduto = descricaoProduto;
 	}
-	public String getUrlImage() {
-		return urlImage;
+	public String getUrlImagem() {
+		return urlImagem;
 	}
-	public void setUrlImage(String urlImage) {
-		this.urlImage = urlImage;
+	public void setUrlImagem(String urlImagem) {
+		this.urlImagem = urlImagem;
 	}
-	
-	
-
 }
